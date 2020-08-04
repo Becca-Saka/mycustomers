@@ -84,7 +84,7 @@ class EditProfileView extends HookWidget {
               Center(
                 child: CustomPartialBuild<SettingManagerModel>(
                   builder: (_, __) => FlatButton(
-                    child: Text('Save'),
+                    child: Text( AppLocalizations.of(context).save),
                     onPressed: () async {await model.save(); __.reload();},
                   ),
                 ),
@@ -169,7 +169,7 @@ class EditProfileView extends HookWidget {
                       ),
                       Divider(),
                       EditField(
-                        //TODO:  Localize Location
+                        //TODO:  Localize Address
                         fieldName: 'Address',
                         hintText: 'Address',
                         initialValue: model.address ?? model.currentStore.address,

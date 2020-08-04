@@ -23,7 +23,7 @@ class AddComplaintView extends StatelessWidget {
         resizeToAvoidBottomInset: false,
         appBar: customizeAppBar(context, 1.0,
             children: [],
-            // TODO: Localize
+            // TODO: Localize Add Complaint
             title: 'Add Complaint',
             arrowColor: BrandColors.primary,
             backgroundColor: Theme.of(context).backgroundColor),
@@ -66,6 +66,7 @@ class AddComplaintView extends StatelessWidget {
                     minLines: 8,
                     maxLines: 12,
                     decoration: InputDecoration(
+                      //TODO Message Localization fix
                       hintText: AppLocalizations.of(context).message,
                       hintStyle: TextStyle(fontSize: 16.sp),
                       contentPadding: EdgeInsets.fromLTRB(16.h, 20, 0, 16.h),

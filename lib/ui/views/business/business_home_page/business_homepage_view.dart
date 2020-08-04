@@ -113,6 +113,7 @@ class BusinessHomePageView extends StatelessWidget {
                   optionButton(
                     context: context,
                     icon: info,
+                    //TODO About us Localization
                     label: 'About us',
                     onTap: model.navigateToAboutUsPage,
                   ),
@@ -138,6 +139,7 @@ class BusinessHomePageView extends StatelessWidget {
                               child: CustomShareRaisedButton(
                                 txtColor: ThemeColors.background,
                                 btnColor: BrandColors.primary,
+                                //TODO Share your business card Localization
                                 btnText: 'Share your business card',
                                 borderColor: BrandColors.primary,
                                 child: SvgPicture.asset(
@@ -156,6 +158,7 @@ class BusinessHomePageView extends StatelessWidget {
                                       businessCardModel.imageFile = image;
                                       FlushbarHelper.createSuccess(
                                         duration: const Duration(seconds: 5),
+                                        //TODO Sharing...  Localization
                                         message: 'Sharing...',
                                       ).show(context);
                                       businessCardModel.shareImageAndText();
